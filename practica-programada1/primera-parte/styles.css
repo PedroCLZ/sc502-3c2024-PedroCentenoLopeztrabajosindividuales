@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('clinica-girona.jpg');
+    background-image: url('practica-programada1\primera-parte\clinica-girona.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -55,5 +55,6 @@ button:hover {
 
 h1,p { 
     color: black;
-    margin: auto;
+    text-align: center;
+    margin: 20px 0;
 }
