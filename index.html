@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Formulario de registro</h1>
+    <p>Por favor rellenar este formulario con la informacion requerida</p>
+    <div class="container">
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="first-name">Ingrese su nombre:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Ingrese su apellido:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Ingrese su email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Crear nueva contrase;a:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Tipo de cuenta (Obligatorio):</label>
+            <select name="account-type" required>
+                <option value="personal">Personal</option>
+                <option value="business">Negocio</option>
+            </select>
+
+            <label for="profile-picture">Subir foto de perfil:</label>
+            <input type="file" id="profile-picture" name="profile-picture">
+
+            <label for="age">Ingrese su edad:</label>
+            <input type="number" id="age" name="age" required min="0">
+
+            <label for="source">Como nos encontro? (seleccione una opcion):</label>
+            <select id="source" name="source">
+                <option value="friend">Amigos</option>
+                <option value="advertisement">Noticias</option>
+                <option value="social-media">Redes Sociales</option>
+                <option value="search-engine">Anuncios</option>
+                <option value="other">Otro</option>
+            </select>
+
+            <label for="bio">Ingrese una biografia:</label>
+            <textarea id="bio" name="bio" rows="4">Me gusta programar de madrugada...</textarea>
+
+            <label>
+                <input type="checkbox" name="terms" required>
+                Aceptar terminos y condiciones
+            </label>
+
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+
+</html>
