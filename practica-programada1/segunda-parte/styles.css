@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    flex: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('Hospital.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.navbar li {
+    margin-bottom: 10px; 
+}
+
+.navbar a {
+    color:#007BFF;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.doctor-profile {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.doctor-specialty {
+    font-size: 20px;
+    color: #007BFF;
+}
+
+#doctor-description {
+    margin: 15px 0;
+}
+
+.appointment-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.appointment-button:hover {
+    background-color: #0056b3;
+}
+
+.patient-comments {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comments-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 8px; 
+    padding: 15px; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.comment-card h4 {
+    margin-bottom: 5px;
+}
+
+.comment-card span {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
