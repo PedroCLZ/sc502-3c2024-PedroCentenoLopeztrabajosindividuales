@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Libro de Calificaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Aplicación de Libro de Calificaciones</h1>
+    <button id="calculate">Calcular Calificaciones</button>
+    <div id="results"></div>
+
+    <script>
+        function getGradebook(students) {
+            const totalGrades = students.reduce((acc, student) => acc + student.grade, 0);
+            const average = totalGrades / students.length;
+
+            return {
+                total: totalGrades,
+                average: average,
+                studentsCount: students.length,
+                studentDetails: students.map(student => `${student.name}: ${student.grade}`).join('<br>')
+            };
+        }
+        const students = [
+            { name: "Juan", grade: 85 },
+            { name: "María", grade: 90 },
+            { name: "Carlos", grade: 78 },
+            { name: "Ana", grade: 92 }
+        ];
+        document.getElementById('calculate').addEventListener('click', () => {
+            const result = getGradebook(students);
+            document.getElementById('results').innerHTML = `
+                <strong>Detalles de Calificaciones:</strong><br>
+                ${result.studentDetails} <br><br>
+                Total de Calificaciones: ${result.total} <br>
+                Promedio de Calificaciones: ${result.average.toFixed(2)} <br>
+                Cantidad de Estudiantes: ${result.studentsCount}
+            `;
+        });
+    </script>
+</body>
+</html>

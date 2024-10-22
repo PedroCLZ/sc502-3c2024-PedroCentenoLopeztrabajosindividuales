@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM - World of Warcraft</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #f0f0f0; 
+            background-image: url('wow1.jpeg'); 
+            background-size: cover;
+            transition: background-image 0.5s ease; 
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #0070ff; 
+            color: white; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5; 
+        }
+        p {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Información sobre World of Warcraft</h1>
+    <p id="info">World of Warcraft es un videojuego multijugador masivo en línea (MMORPG) lanzado por Blizzard Entertainment en 2004. Los jugadores pueden explorar el mundo de Azeroth, realizar misiones y enfrentarse a diversos enemigos.</p>
+    
+    <button onclick="changeContent()">Cambiar Información</button>
+
+    <script>
+        function changeContent() {
+            document.getElementById('info').innerHTML = "En World of Warcraft, los jugadores pueden elegir entre diferentes razas y clases, cada una con habilidades únicas. El juego ha recibido varias expansiones, añadiendo nuevas historias, personajes y zonas para explorar.";
+            document.body.style.backgroundImage = "url('wow2.jpeg')"; 
+        }
+    </script>
+</body>
+</html>
+

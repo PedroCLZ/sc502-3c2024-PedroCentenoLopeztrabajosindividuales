@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Edad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Verificación de Edad</h1>
+    <label for="age">Ingresa tu edad:</label>
+    <input type="number" id="age" placeholder="Edad" min="0">
+
+    <button onclick="checkAge()">Verificar</button>
+
+    <div class="result" id="result"></div>
+
+    <script>
+        function checkAge() {
+            const age = parseInt(document.getElementById('age').value);
+            const resultDiv = document.getElementById('result');
+
+            if (isNaN(age) || age < 0) {
+                resultDiv.innerHTML = "Por favor, ingresa una edad válida.";
+                resultDiv.style.color = "#ff0000"; 
+            } else if (age >= 18) {
+                resultDiv.innerHTML = "Eres mayor de edad.";
+                resultDiv.style.color = "#008000"; 
+            } else {
+                resultDiv.innerHTML = "Eres menor de edad.";
+                resultDiv.style.color = "#ff0000"; 
+            }
+        }
+    </script>
+</body>
+
+</html>

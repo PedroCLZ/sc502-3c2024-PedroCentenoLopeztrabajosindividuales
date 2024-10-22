@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1 {
+    color: #0070ff;
+    text-align: center; 
+}
+#students {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.student {
+    background-color: #e7f1ff; 
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #0070ff;
+    text-align: center; 
+}
+.average {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #008000; 
+    text-align: center; 
+}
+.note {
+    color: #0070ff; 
+    font-weight: bold;
+}
+

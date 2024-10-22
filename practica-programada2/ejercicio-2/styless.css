@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #0070ff;
+}
+#results {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
