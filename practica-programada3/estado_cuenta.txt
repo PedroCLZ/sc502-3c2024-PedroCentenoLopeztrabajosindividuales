@@ -1,0 +1,7 @@
+Estado de Cuenta
+hola mundo: $200
+
+Total de Contado: $200
+Total con Interés (2.6%): $205.2
+Cash Back (0.1%): $0.2
+Monto Final a Pagar: $205
